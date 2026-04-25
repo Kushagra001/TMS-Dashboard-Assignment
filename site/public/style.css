@@ -704,10 +704,76 @@ body {
     .stats-card, .main-card, .feed-card {
         width: 100%;
     }
+    .events-card {
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
     .tms-sidebar { display: none; }
     .tms-top-bar, .tms-sub-header { left: 0; width: 100%; }
     .tms-page-wrapper { margin-left: 0; width: 100%; }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --main-top-offset: 130px; /* Account for potential wrapping or larger padding */
+    }
+    
+    .tms-top-bar {
+        padding: 8px 15px;
+    }
+    
+    .branding-text, .welcome-text, .vertical-separator, .solar-link-icon {
+        display: none !important;
+    }
+    
+    .tms-sub-header {
+        padding: 0 15px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .tms-content-inner {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+    
+    .greeting-row {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        gap: 12px;
+    }
+    
+    .stats-cards-container, .overview-row, .main-grid-row {
+        gap: 15px;
+    }
+    
+    .tms-main-content {
+        margin-top: 105px;
+    }
+    
+    .tms-sub-header {
+        top: 48px;
+    }
+
+    /* Small card adjustments */
+    .stats-card {
+        height: auto;
+        min-height: 110px;
+    }
+    
+    .stats-card-value {
+        font-size: 20px;
+    }
+
+    .events-card {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    .section-header {
+        margin-bottom: 12px;
+    }
 }
