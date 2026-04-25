@@ -395,9 +395,10 @@ body {
 .stats-cards-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* Added to allow wrapping on medium screens */
     align-items: flex-start;
     padding: 0px;
-    gap: 30px;
+    gap: 20px; /* Reduced from 30px for better fit */
     flex: 1;
     min-width: 0;
 }
@@ -450,10 +451,9 @@ body {
 /* Upcoming Events Card */
 .events-card {
     width: 387px;
-    height: 141px;
+    min-height: 141px; /* Changed from height to min-height */
     justify-content: flex-start;
     gap: 10px;
-    overflow-y: hidden;
     flex-shrink: 0;
 }
 
@@ -692,20 +692,34 @@ body {
         min-width: unset;
         padding: 24px 1rem;
     }
-    .overview-row, .main-grid-row, .greeting-row {
+    .overview-row {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+    }
+    .main-grid-row, .greeting-row {
         flex-direction: column;
         width: 100%;
         height: auto;
     }
-    .stats-cards-container, .left-grid, .right-feed-column {
+    .stats-cards-container {
+        width: 100%;
+        height: auto;
+        flex: none;
+    }
+    .left-grid, .right-feed-column {
         width: 100%;
         height: auto;
     }
     .stats-card, .main-card, .feed-card {
         width: 100%;
+        flex: none;
     }
     .events-card {
         width: 100%;
+        height: auto;
+        flex: none;
     }
 }
 
@@ -717,7 +731,7 @@ body {
 
 @media (max-width: 576px) {
     :root {
-        --main-top-offset: 130px; /* Account for potential wrapping or larger padding */
+        --main-top-offset: 130px;
     }
     
     .tms-top-bar {
@@ -749,6 +763,10 @@ body {
     .stats-cards-container, .overview-row, .main-grid-row {
         gap: 15px;
     }
+
+    .stats-cards-container {
+        flex-direction: column;
+    }
     
     .tms-main-content {
         margin-top: 105px;
@@ -760,6 +778,7 @@ body {
 
     /* Small card adjustments */
     .stats-card {
+        width: 100%;
         height: auto;
         min-height: 110px;
     }
@@ -769,8 +788,25 @@ body {
     }
 
     .events-card {
+        width: 100%;
         height: auto;
         padding-bottom: 20px;
+        overflow-y: visible;
+    }
+
+    .event-card {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 12px;
+    }
+
+    .event-details {
+        flex: 1;
+    }
+
+    .todo-meta {
+        font-size: 11px;
+        line-height: 1.4;
     }
     
     .section-header {
