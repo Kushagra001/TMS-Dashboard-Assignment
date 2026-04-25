@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cynosure | Employee Dashboard</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- jQuery (Required by script.js) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Slim Sidebar (48px wide) -->
+    <aside class="tms-sidebar">
+        <div class="sidebar-header">
+            <i class="material-symbols-rounded">grid_view</i>
+        </div>
+        <div class="sidebar-nav-container">
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <i class="material-symbols-rounded">dashboard</i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="material-symbols-rounded">calendar_month</i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="material-symbols-rounded">analytics</i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="material-symbols-rounded">school</i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="material-symbols-rounded">person</i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="material-symbols-rounded">description</i>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="material-symbols-rounded">video_library</i>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="nav-item">
+                    <i class="material-symbols-rounded">help</i>
+                </a>
+                <a href="#" class="nav-item" style="margin-top: 20px;">
+                    <i class="material-symbols-rounded">power_settings_new</i>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+    <div class="tms-page-wrapper">
+        <!-- Top Bar (Frame 15) -->
+        <header class="tms-top-bar">
+            <div class="branding-area">
+                <div class="cynosure-logo-container">
+                    <span class="logo-main">Cynosure</span>
+                    <div class="logo-sub">
+                        <span class="tech-text">technology</span>
+                        <span class="separator">></span>
+                        <span class="strategy-text">strategy</span>
+                    </div>
+                </div>
+                <div class="vertical-separator"></div>
+                <span class="branding-text">Employee Self Service</span>
+            </div>
+
+            <div class="user-profile-area">
+                <span class="welcome-text">Welcome Kushagra</span>
+                <div class="solar-link-icon">
+                    <i class="material-symbols-rounded">link</i>
+                </div>
+                <div class="user-avatar">
+                    <img src="https://ui-avatars.com/api/?name=KU&background=0F4F92&color=fff" alt="User">
+                </div>
+            </div>
+        </header>
+
+        <!-- Sub Header / Breadcrumb (Frame 16) -->
+        <div class="tms-sub-header">
+            <div class="breadcrumb-area">
+                <span>Dashboard</span>
+            </div>
+            <button class="btn-border-blue" style="width: auto; height: 26px; padding: 0 12px; gap: 4px;">
+                <i class="material-symbols-rounded" style="font-size: 16px;">calendar_today</i>
+                2025-2026
+                <i class="material-symbols-rounded" style="font-size: 16px;">keyboard_arrow_down</i>
+            </button>
+        </div>
+
+        <!-- Main Dashboard Content -->
+        <main class="tms-main-content">
+            <div class="tms-content-inner">
+                
+                <!-- Frame 427319465: Greeting Row -->
+                <div class="greeting-row">
+                    <h1>Hello Kushagra,</h1>
+                    <button class="btn-fill-blue">
+                        <i class="material-symbols-rounded" style="font-size: 18px;">add</i>
+                        Create
+                    </button>
+                </div>
+
+                <!-- Overview: Stats Cards & Upcoming Events -->
+                <div class="overview-row">
+                    <div class="stats-cards-container">
+                        <!-- Todays Meeting Stats -->
+                        <div class="tms-card stats-card stats-meeting">
+                            <div class="icon-tag"><i class="material-symbols-rounded">videocam</i></div>
+                            <p class="stats-card-label">Todays Meeting</p>
+                            <h2 class="stats-card-value">12</h2>
+                        </div>
+                        <!-- Todays Task Stats -->
+                        <div class="tms-card stats-card stats-task">
+                            <div class="icon-tag"><i class="material-symbols-rounded">assignment</i></div>
+                            <p class="stats-card-label">Todays Task</p>
+                            <h2 class="stats-card-value">12</h2>
+                        </div>
+                        <!-- Pending Stats -->
+                        <div class="tms-card stats-card stats-pending">
+                            <div class="icon-tag"><i class="material-symbols-rounded">assignment</i></div>
+                            <p class="stats-card-label">Total Pending task</p>
+                            <h2 class="stats-card-value">12</h2>
+                        </div>
+                        <!-- Monthly Attendance Stats -->
+                        <div class="tms-card stats-card stats-attendance">
+                            <div class="icon-tag"><i class="material-symbols-rounded">calendar_month</i></div>
+                            <p class="stats-card-label">Monthly Attendance</p>
+                            <h2 class="stats-card-value">94%</h2>
+                        </div>
+                    </div>
+
+                    <!-- Upcoming Events Slider -->
+                    <div class="tms-card events-card" style="padding: 12px;">
+                        <div class="d-flex justify-content-between align-items-center w-100 mb-2">
+                            <div class="section-header" style="margin-bottom: 0;">
+                                <div class="section-indicator"></div>
+                                <h3 class="card-title-main" style="color: #0F4F92;">Upcoming Events</h3>
+                            </div>
+                            <div class="d-flex gap-2">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; border: 1.5px solid #131927; display: flex; align-items: center; justify-content: center;" class="clickable">
+                                    <i class="material-symbols-rounded text-dark" style="font-size: 16px;">chevron_left</i>
+                                </div>
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background: #0F4F92; display: flex; align-items: center; justify-content: center;" class="clickable">
+                                    <i class="material-symbols-rounded text-white" style="font-size: 16px;">chevron_right</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 w-100">
+                            <!-- Event 1 -->
+                            <div class="event-card flex-grow-1" style="padding: 8px 12px; border: 1px solid #EDEDED; box-shadow: 0px 1px 4px rgba(0,0,0,0.02);">
+                                <div class="event-date date-blue">
+                                    <span class="event-day">03</span>
+                                    <span class="event-month">July</span>
+                                </div>
+                                <div class="event-details d-flex flex-column justify-content-start">
+                                    <h4 class="todo-title" style="font-size: 15px; line-height: 1.2;">Project Kickoff</h4>
+                                    <p class="todo-meta" style="padding-left: 0; margin-top: 2px; font-size: 11px; line-height: 1.4;">Initial briefing with the product and engineering teams to define milestones.</p>
+                                    <div class="d-flex align-items-center gap-2 mt-1">
+                                        <i class="material-symbols-rounded" style="color: #0A3B7E; font-size: 14px;">alarm</i>
+                                        <span class="todo-meta" style="padding-left: 0; color: #444444; font-size: 12px;">12:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Event 2 -->
+                            <div class="event-card flex-grow-1" style="padding: 8px 12px; border: 1px solid #EDEDED; box-shadow: 0px 1px 4px rgba(0,0,0,0.02);">
+                                <div class="event-date date-orange">
+                                    <span class="event-day">05</span>
+                                    <span class="event-month">July</span>
+                                </div>
+                                <div class="event-details d-flex flex-column justify-content-start">
+                                    <h4 class="todo-title" style="font-size: 15px; line-height: 1.2;">Design Review</h4>
+                                    <p class="todo-meta" style="padding-left: 0; margin-top: 2px; font-size: 11px; line-height: 1.4;">Weekly sync to review the latest dashboard wireframes and UX flows.</p>
+                                    <div class="d-flex align-items-center gap-2 mt-1">
+                                        <i class="material-symbols-rounded" style="color: #0A3B7E; font-size: 14px;">alarm</i>
+                                        <span class="todo-meta" style="padding-left: 0; color: #444444; font-size: 12px;">12:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Grid: To-Do, Ongoing, Review, Meeting, Feed -->
+                <div class="main-grid-row">
+                    <!-- Left Section (1225px) -->
+                    <div class="left-grid">
+                        <!-- To Do List -->
+                        <div class="tms-card main-card todo-card">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="section-header" style="margin-bottom: 0;">
+                                    <div class="section-indicator"></div>
+                                    <h3 class="card-title-main" style="color: #0F4F92;">To Do List</h3>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn-border-blue" style="width: auto; padding: 4px 8px; gap: 4px;">Today <i class="material-symbols-rounded" style="font-size: 14px;">keyboard_arrow_down</i></button>
+                                    <button class="btn-fill-blue" style="width: 32px; height: 32px; padding: 0;"><i class="material-symbols-rounded" style="font-size: 18px;">add</i></button>
+                                </div>
+                            </div>
+                            <div class="todo-list d-flex flex-column gap-2">
+                                <div class="todo-item">
+                                    <div class="todo-item-top">
+                                        <i class="material-symbols-rounded" style="font-size: 20px; font-variation-settings: 'FILL' 1; color: #FFCB05;">star</i>
+                                        <span class="todo-title">Design Task Management App</span>
+                                        <span class="status-badge status-danger ms-auto">Daily</span>
+                                    </div>
+                                    <div class="todo-meta">Task Management <span style="font-size: 14px; margin: 0 4px;">&bull;</span> By : Deepa Ma'am</div>
+                                </div>
+                                <div class="todo-item">
+                                    <div class="todo-item-top">
+                                        <i class="material-symbols-rounded" style="font-size: 20px; color: #999999;">star</i>
+                                        <span class="todo-title">Design Wire frame</span>
+                                        <span class="status-badge status-warning ms-auto">Weekly</span>
+                                    </div>
+                                    <div class="todo-meta">Task Management <span style="font-size: 14px; margin: 0 4px;">&bull;</span> By : Gourav sir</div>
+                                </div>
+                                <div class="todo-item">
+                                    <div class="todo-item-top">
+                                        <i class="material-symbols-rounded" style="font-size: 20px; color: #999999;">star</i>
+                                        <span class="todo-title">Scope Document</span>
+                                        <span class="status-badge status-blue ms-auto">Monthly</span>
+                                    </div>
+                                    <div class="todo-meta">Task Management <span style="font-size: 14px; margin: 0 4px;">&bull;</span> By : Gourav sir</div>
+                                </div>
+                                <div class="todo-item">
+                                    <div class="todo-item-top">
+                                        <i class="material-symbols-rounded" style="font-size: 20px; color: #999999;">star</i>
+                                        <span class="todo-title">Document Creation</span>
+                                        <span class="status-badge ms-auto" style="background: #EEF0FF; color: #6576FF;">Yearly</span>
+                                    </div>
+                                    <div class="todo-meta">Task Management <span style="font-size: 14px; margin: 0 4px;">&bull;</span> By : Gourav sir</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Meeting Schedule -->
+                        <div class="tms-card main-card meeting-card">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="section-header" style="margin-bottom: 0;">
+                                    <div class="section-indicator"></div>
+                                    <h3 class="card-title-main" style="color: #0F4F92;">Meeting</h3>
+                                </div>
+                                <div class="d-flex gap-2">
+                                    <button class="btn-border-blue" style="width: auto; padding: 4px 8px; gap: 4px;">Today <i class="material-symbols-rounded" style="font-size: 14px;">keyboard_arrow_down</i></button>
+                                    <button class="btn-fill-blue" style="width: 32px; height: 32px; padding: 0;"><i class="material-symbols-rounded" style="font-size: 18px;">add</i></button>
+                                </div>
+                            </div>
+                            <div class="meeting-list d-flex flex-column gap-3 mt-2">
+                                <div class="meeting-item d-flex align-items-center gap-3">
+                                    <div style="width: 40px; height: 40px; background: #EAF0F7; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="material-symbols-rounded" style="font-size: 20px; color: #0A3B7E;">videocam</i>
+                                    </div>
+                                    <div>
+                                        <h4 class="todo-title">Team Stand-up Meeting</h4>
+                                        <div class="d-flex align-items-center gap-2 mt-1">
+                                            <i class="material-symbols-rounded" style="font-size: 14px; color: #666666;">alarm</i>
+                                            <span class="todo-meta" style="padding-left: 0; color: #444444;">09:15 AM - 09:15 AM</span>
+                                            <span class="status-badge" style="background: #FFFFFF; border: 1px solid #AEAEB2; color: #000000;">70 min</span>
+                                        </div>
+                                    </div>
+                                    <i class="material-symbols-rounded text-muted ms-auto clickable">chevron_right</i>
+                                </div>
+                                <div class="meeting-item d-flex align-items-center gap-3">
+                                    <div style="width: 40px; height: 40px; background: #EAF0F7; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="material-symbols-rounded" style="font-size: 20px; color: #0A3B7E;">videocam</i>
+                                    </div>
+                                    <div>
+                                        <h4 class="todo-title">Discussion with Client</h4>
+                                        <div class="d-flex align-items-center gap-2 mt-1">
+                                            <i class="material-symbols-rounded" style="font-size: 14px; color: #666666;">alarm</i>
+                                            <span class="todo-meta" style="padding-left: 0; color: #444444;">09:15 AM - 09:15 AM</span>
+                                            <span class="status-badge" style="background: #FFFFFF; border: 1px solid #AEAEB2; color: #000000;">70 min</span>
+                                        </div>
+                                    </div>
+                                    <i class="material-symbols-rounded text-muted ms-auto clickable">chevron_right</i>
+                                </div>
+                                <div class="meeting-item d-flex align-items-center gap-3">
+                                    <div style="width: 40px; height: 40px; background: #EAF0F7; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                                        <i class="material-symbols-rounded" style="font-size: 20px; color: #0A3B7E;">videocam</i>
+                                    </div>
+                                    <div>
+                                        <h4 class="todo-title">Interview Front end Developer</h4>
+                                        <div class="d-flex align-items-center gap-2 mt-1">
+                                            <i class="material-symbols-rounded" style="font-size: 14px; color: #666666;">alarm</i>
+                                            <span class="todo-meta" style="padding-left: 0; color: #444444;">09:15 AM - 09:15 AM</span>
+                                            <span class="status-badge" style="background: #FFFFFF; border: 1px solid #AEAEB2; color: #000000;">70 min</span>
+                                        </div>
+                                    </div>
+                                    <i class="material-symbols-rounded text-muted ms-auto clickable">chevron_right</i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ongoing Projects -->
+                        <div class="tms-card main-card projects-card">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="section-header" style="margin-bottom: 0;">
+                                    <div class="section-indicator"></div>
+                                    <h3 class="card-title-main" style="color: #0F4F92;">Ongoing Projects</h3>
+                                </div>
+                            </div>
+                            <div class="projects-list d-flex flex-column gap-3 mt-2" style="overflow-y: auto;">
+                                <div class="project-item">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="todo-title">Update Employee Contact ..</h4>
+                                        <span class="todo-title" style="color: #666666;">62%</span>
+                                    </div>
+                                    <div class="d-flex gap-3 mt-1">
+                                        <span class="todo-meta" style="padding-left: 0;"><i class="material-symbols-rounded" style="font-size: 14px; vertical-align: middle; margin-right: 4px;">format_list_bulleted</i>12 tasks</span>
+                                        <span class="todo-meta" style="padding-left: 0;"><i class="material-symbols-rounded" style="font-size: 14px; vertical-align: middle; margin-right: 4px;">monitoring</i>86 Activities</span>
+                                    </div>
+                                    <div class="tms-progress-container mt-2">
+                                        <div class="tms-progress-fill" style="width: 62%; background: #0A3B7E;"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div class="avatar-stack">
+                                            <img src="https://ui-avatars.com/api/?name=JD&background=random" alt="User">
+                                            <img src="https://ui-avatars.com/api/?name=AN&background=random" alt="User">
+                                            <img src="https://ui-avatars.com/api/?name=SK&background=random" alt="User">
+                                            <div class="avatar-more">+4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-item">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="todo-title">Generate Monthly Attendance Report</h4>
+                                        <span class="todo-title" style="color: #00A651;">100%</span>
+                                    </div>
+                                    <div class="d-flex gap-3 mt-1">
+                                        <span class="todo-meta" style="padding-left: 0;"><i class="material-symbols-rounded" style="font-size: 14px; vertical-align: middle; margin-right: 4px;">format_list_bulleted</i>12 tasks</span>
+                                        <span class="todo-meta" style="padding-left: 0;"><i class="material-symbols-rounded" style="font-size: 14px; vertical-align: middle; margin-right: 4px;">monitoring</i>86 Activities</span>
+                                    </div>
+                                    <div class="tms-progress-container mt-2">
+                                        <div class="tms-progress-fill tms-progress-green" style="width: 100%;"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div class="avatar-stack">
+                                            <img src="https://ui-avatars.com/api/?name=JD&background=random" alt="User">
+                                            <img src="https://ui-avatars.com/api/?name=AN&background=random" alt="User">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-item">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="todo-title">Process Monthly Payroll</h4>
+                                        <span class="todo-title" style="color: #666666;">75%</span>
+                                    </div>
+                                    <div class="d-flex gap-3 mt-1">
+                                        <span class="todo-meta" style="padding-left: 0;"><i class="material-symbols-rounded" style="font-size: 14px; vertical-align: middle; margin-right: 4px;">format_list_bulleted</i>12 tasks</span>
+                                        <span class="todo-meta" style="padding-left: 0;"><i class="material-symbols-rounded" style="font-size: 14px; vertical-align: middle; margin-right: 4px;">monitoring</i>86 Activities</span>
+                                    </div>
+                                    <div class="tms-progress-container mt-2">
+                                        <div class="tms-progress-fill" style="width: 75%; background: #F4BD0E;"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div class="avatar-stack">
+                                            <img src="https://ui-avatars.com/api/?name=JD&background=random" alt="User">
+                                            <img src="https://ui-avatars.com/api/?name=AN&background=random" alt="User">
+                                            <div class="avatar-more">+2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-item">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="todo-title">Quarterly Performance Review</h4>
+                                        <span class="todo-title" style="color: #666666;">0%</span>
+                                    </div>
+                                    <div class="d-flex gap-3 mt-1">
+                                        <span class="todo-meta" style="padding-left: 0;"><i class="material-symbols-rounded" style="font-size: 14px; vertical-align: middle; margin-right: 4px;">format_list_bulleted</i>12 tasks</span>
+                                        <span class="todo-meta" style="padding-left: 0;"><i class="material-symbols-rounded" style="font-size: 14px; vertical-align: middle; margin-right: 4px;">monitoring</i>86 Activities</span>
+                                    </div>
+                                    <div class="tms-progress-container mt-2">
+                                        <div class="tms-progress-fill" style="width: 0%; background: #0A3B7E;"></div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <div class="avatar-stack">
+                                            <img src="https://ui-avatars.com/api/?name=JD&background=random" alt="User">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tasks in Review -->
+                        <div class="tms-card main-card review-card">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <div class="section-header" style="margin-bottom: 0;">
+                                    <div class="section-indicator"></div>
+                                    <h3 class="card-title-main" style="color: #0F4F92;">Tasks in Review</h3>
+                                </div>
+                                <button class="btn-border-blue" style="width: auto; padding: 4px 8px;">View All</button>
+                            </div>
+                            <div class="review-list d-flex flex-column gap-2 mt-2" style="overflow-y: auto;">
+                                <div class="todo-item" style="padding: 12px; border: 1px solid #EDEDED; box-shadow: none;">
+                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                        <h4 class="todo-title">Design Task Management</h4>
+                                        <span class="status-badge" style="background: #E0FFE0; color: #006600;">Submitted</span>
+                                    </div>
+                                    <p class="todo-meta" style="padding-left: 0; margin-top: 4px;">Submitted: Yesterday <span style="font-size: 14px; margin: 0 4px;">&bull;</span> To : Deepa Ma'am</p>
+                                </div>
+                                <div class="todo-item" style="padding: 12px; border: 1px solid #EDEDED; box-shadow: none;">
+                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                        <h4 class="todo-title">Design Wire frame</h4>
+                                        <span class="status-badge" style="background: #FFF4E0; color: #994C00;">In Review</span>
+                                    </div>
+                                    <p class="todo-meta" style="padding-left: 0; margin-top: 4px;">Submitted: Yesterday <span style="font-size: 14px; margin: 0 4px;">&bull;</span> To : Deepa Ma'am</p>
+                                </div>
+                                <div class="todo-item" style="padding: 12px; border: 1px solid #EDEDED; box-shadow: none;">
+                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                        <h4 class="todo-title">Scope Document</h4>
+                                        <span class="status-badge" style="background: #FFF4E0; color: #994C00;">In Review</span>
+                                    </div>
+                                    <p class="todo-meta" style="padding-left: 0; margin-top: 4px;">Submitted: Yesterday <span style="font-size: 14px; margin: 0 4px;">&bull;</span> To : Deepa Ma'am</p>
+                                </div>
+                                <div class="todo-item" style="padding: 12px; border: 1px solid #EDEDED; box-shadow: none;">
+                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                        <h4 class="todo-title">Document Creation</h4>
+                                        <span class="status-badge" style="background: #E0FFE0; color: #006600;">Submitted</span>
+                                    </div>
+                                    <p class="todo-meta" style="padding-left: 0; margin-top: 4px;">Submitted: Yesterday <span style="font-size: 14px; margin: 0 4px;">&bull;</span> To : Deepa Ma'am</p>
+                                </div>
+                                <div class="todo-item" style="padding: 12px; border: 1px solid #EDEDED; box-shadow: none;">
+                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                        <h4 class="todo-title">User Experience Research</h4>
+                                        <span class="status-badge" style="background: #FFF4E0; color: #994C00;">In Review</span>
+                                    </div>
+                                    <p class="todo-meta" style="padding-left: 0; margin-top: 4px;">Submitted: Yesterday <span style="font-size: 14px; margin: 0 4px;">&bull;</span> To : Deepa Ma'am</p>
+                                </div>
+                                <div class="todo-item" style="padding: 12px; border: 1px solid #EDEDED; box-shadow: none;">
+                                    <div class="d-flex justify-content-between align-items-center w-100">
+                                        <h4 class="todo-title">Prototype Development</h4>
+                                        <span class="status-badge" style="background: #FFF4E0; color: #994C00;">In Review</span>
+                                    </div>
+                                    <p class="todo-meta" style="padding-left: 0; margin-top: 4px;">Submitted: Yesterday <span style="font-size: 14px; margin: 0 4px;">&bull;</span> To : Deepa Ma'am</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Feed -->
+                    <div class="right-feed-column">
+                        <div class="tms-card feed-card" style="height: auto; min-height: 200px; padding: 16px;">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex align-items-center gap-2">
+                                    <h3 class="card-title-main" style="color: #000000; font-size: 14px;">View All</h3>
+                                    <span class="status-badge" style="background: #EAF0F7; color: #0A3B7E; font-size: 12px; padding: 4px 8px; border-radius: 20px;">Unread (2)</span>
+                                </div>
+                                <span class="todo-meta" style="color: #0A3B7E; text-decoration: underline; cursor: pointer; padding-left: 0;">Mark all as read</span>
+                            </div>
+                            <div class="w-100 d-flex justify-content-center mb-3">
+                                <span class="status-badge" style="background: #F5F5F5; color: #666666; border-radius: 20px; font-size: 12px; padding: 4px 12px;">Thursday, 26 Jun</span>
+                            </div>
+                            <div class="feed-list d-flex flex-column gap-3 mt-2">
+                                <div class="feed-item d-flex flex-column gap-1">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="todo-title" style="font-size: 14px;">New Task Assigned</h4>
+                                        <span class="status-badge" style="background: #E0F7FA; color: #00BCD4; font-size: 10px; padding: 2px 6px;">Unread</span>
+                                    </div>
+                                    <p class="todo-meta" style="padding-left: 0; font-size: 12px; line-height: 1.4;">You have been assigned to "Design Wire frame" task by Gourav sir.</p>
+                                </div>
+                                <div class="feed-item d-flex flex-column gap-1">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="todo-title" style="font-size: 14px;">Travel management reached a Milestone</h4>
+                                    </div>
+                                    <p class="todo-meta" style="padding-left: 0; font-size: 12px; line-height: 1.4;">The project has successfully reached its 50% milestone.</p>
+                                </div>
+                                <div class="feed-item d-flex flex-column gap-1">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h4 class="todo-title" style="font-size: 14px;">New Meeting Scheduled</h4>
+                                        <span class="status-badge" style="background: #E0F7FA; color: #00BCD4; font-size: 10px; padding: 2px 6px;">Unread</span>
+                                    </div>
+                                    <p class="todo-meta" style="padding-left: 0; font-size: 12px; line-height: 1.4;">A new meeting "Product Design Review" is scheduled for 2:00 PM.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div> <!-- End tms-page-wrapper -->
+</body>
+</html>
