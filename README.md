@@ -1,7 +1,5 @@
 # Cynosure TMS Employee Dashboard
 
-Hey there! 👋 Welcome to my submission for the Junior Frontend Developer role. 
-
 This repository contains the frontend implementation of the Cynosure TMS Employee Dashboard. I wanted to use this README to give you a peek into my thought process, how I approached the design, and the steps I took to bring the Figma mockup to life.
 
 ## My Thought Process & Approach
@@ -45,4 +43,4 @@ Since this is a static build, getting it running is super easy:
 
 ---
 
-I really enjoyed working on this assignment. I focused heavily on writing clean, semantic HTML and modular CSS. I'm looking forward to discussing my implementation with the team!
+I really enjoyed working on this assignment. I focused heavily on writing clean, semantic HTML and modular CSS.
